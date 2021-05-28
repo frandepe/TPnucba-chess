@@ -25,6 +25,9 @@ li, a{
     font-size: 1.1em;
     color: #735751;
     text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 
 }
 
@@ -32,7 +35,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px ;
+    padding: 2%;
     background-color: black;
 }
 
@@ -101,18 +104,18 @@ header{
 }
 
 .container-icons i:hover{
-    color: #735751
+    color: #735751;
 }
     
 
 .logo-img{
-    height: 50px;
+    height: 3em;
 }
 
 .contenedor-form{
 
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 5%;
+    margin-bottom: 5%;
     background-color: #E7D7C1;
     border-radius: 50%;
     border-width: 10px; 
@@ -137,7 +140,7 @@ header{
     justify-content: space-between;
     margin-bottom: 80px;
     background-color: #8C1C13;
-    padding: 40px;
+    padding: 4%;
    
 }
 
@@ -147,7 +150,7 @@ header{
 }
 
 .container-input{
-    margin: 30px;
+    margin: 4%;
     font-size: 1.5em;
     text-decoration: underline;
 
@@ -162,7 +165,7 @@ header{
 
 .btn-enviar{
     font-size: 1.5em;
-    width: 100px;
+    width: 3.8em;
     background-color: #E7D7C1;
     border-radius: 5%;
     
@@ -180,11 +183,11 @@ header{
 .titulo-animado{
     background-color: black;
     width: 100%;
-    height: 100px;
+    height: 8%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 80px;
+    margin-top: 5%;
 
 }
 
@@ -209,9 +212,8 @@ header{
 .contenedor-entrenamiento{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 80px;
     background-color: #8C1C13;
-    padding: 40px;
+    padding: 4%;
 
 }
 
@@ -222,9 +224,9 @@ header{
 .lista-entrenamiento{
     display: flex;
     justify-content: center;
-    margin-left: 300px;
+    margin-left: 22%;
     font-size: 1.8em;
-    margin-top: 25px;
+    margin-top: 2%;
     
     
 }
@@ -232,7 +234,7 @@ header{
 .lista-entrenamiento li{
     color: black;
     list-style: none;
-    padding-bottom: 20px;
+    padding-bottom: 3%;
 
 }
 
@@ -251,7 +253,7 @@ header{
 
 .contenedor-redes{
     margin-top: 80px;
-    height: 300px;
+    height: 22%;
     background-color: black;
     display: flex;
     align-items: center;
@@ -287,7 +289,7 @@ header{
     align-items: center;
     justify-content: center;
     color: #fff;
-    font-size: 30px !important;
+    font-size: 1.6em !important;
 
 }
 
@@ -340,7 +342,7 @@ header{
 
 .contendor-imagenes .box{
     position: relative;
-    width: 275px;
+    width: 18%;
     height: 275px;
     overflow: hidden;
     transition: 0.5s;
@@ -445,9 +447,9 @@ header{
     color: black;
     font-size: 10em;
     box-shadow: 0 20px 50px rgba(0,0,0,.5);
-    padding: 30px 60px;
-    margin-left: 300px;
-    margin-top: 180px;
+    padding: 3% 6%;
+    margin-left: 16%;
+    margin-top: 10%;
     overflow: hidden;
     transition: all 0.5s ease 0s;
 
@@ -507,4 +509,63 @@ header{
     height: 100%;
     background: linear-gradient(to top, black, #E7D7C1);
     animation: chess4 2s linear infinite;
+}
+
+.contenedor-carrusel{
+    padding: 5px;
+    width: 100%;
+    background-color: black;
+}
+
+ul.carrusel{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+ul.carrusel li{
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+
+    }
+
+ul.carrusel li img{
+    width: 100%;
+    height: 325px;
+    object-fit: cover;
+}
+
+ul.carrusel li:first-child{
+    opacity: 1;
+}
+
+ul.carrusel li:target{
+    opacity: 1;
+}
+
+.menu-carrusel{
+    text-align: center;
+}
+
+.menu-carrusel li{
+    display: inline-block;
+    text-align: center;
+}
+
+.menu-carrusel li a{
+    display: inline-block;
+    color: #E7D7C1;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+    border-radius: 100%;
+    text-decoration: none;
+    margin: 10px;
+
 }
