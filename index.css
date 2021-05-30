@@ -17,6 +17,7 @@ body {
 
 .portada{
     width: 100%;
+
 }
 
 li, a{
@@ -84,6 +85,7 @@ header{
     -webkit-box-shadow: 1px 1px 18px 2px rgba(140,28,19,1);
     -moz-box-shadow: 1px 1px 18px 2px rgba(140,28,19,1);
     box-shadow: 1px 1px 18px 2px rgba(140,28,19,1);
+    transition: all 0.5s ease 0s;
     
    
 }
@@ -107,6 +109,7 @@ header{
 
 .container-icons i:hover{
     color: #735751;
+    
 }
     
 
@@ -135,6 +138,44 @@ header{
     font-size: 1.7em;
     
 }
+.contenedor-kasparov{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
+}
+
+.kasparov-h1 h1{
+    text-align: center;
+    margin-top: 10%;
+    letter-spacing: 3px;
+    font-size: 3em;
+    color: rgb(58, 54, 54);
+    text-shadow: 1px 2px #E7D7C1;
+    
+}
+
+.kasparov-h1 h3{
+  
+}
+
+.kasparov-h1 h3::before{
+    margin-top: 5%;
+    margin-left: 30%;
+    content: attr(data-text);
+    position: absolute;
+    font-size: 2em;
+    color: rgb(58, 54, 54);
+    border-right: 2px solid #E7D7C1;
+    text-shadow: 0.1px 0.5px #E7D7C1;
+    width: 100%;
+    overflow: hidden;
+    animation: mateentres 5s linear infinite;
+    text-decoration: underline;
+    
+
+}
 
 .contenedor-contacto{
 
@@ -144,8 +185,8 @@ header{
     background-color: #8C1C13;
     padding: 4%;
     width: 100%;
+    border: 1px solid black;
     
-   
 }
 
 .contacto-left{
@@ -218,6 +259,7 @@ header{
     justify-content: space-around;
     background-color: #8C1C13;
     padding: 4%;
+    border: 1px solid black;
 
 }
 
@@ -441,6 +483,7 @@ header{
     justify-content: space-between;
     background-color: #8C1C13;
     padding: 40px;
+    border: 1px solid black;
 }
 
 
@@ -574,137 +617,5 @@ ul.carrusel li:target{
 
 }
 
-@media screen and (max-width: 1440px){
-    .contenedor-entrenamiento img{
-        max-width: 50%;
-    }
-    .contenedor-problemas img{
-        max-width: 50%;
-    }
 }
 
-@media  screen and (max-width: 1024px) {
-
-
-    .contenedor-entrenamiento img{
-        max-width: 40%;
-    }
-    .lista-entrenamiento{
-        font-size: 1.2em;
-    }
-
-    .icono-problemas{
-        font-size: 0.6em;
-    }
-    
-    .contenedor-contacto img{
-        max-width: 50%;
-        height: auto;
-    }
-
-    .contendor-imagenes{
-        display: none;
-    }
-}
-
-@media  screen and (max-width: 768px){
-
-    .contenedor-redes li{
-        width: 45px;
-        margin: 40px;
-    }
-
-    .contenedor-contacto{
-        font-size: 0.51em;
-        height: 30%;
-
-    }
-}
-
-@media  screen and (max-width: 425px){
-
-    header .lista-navegacion{
-        display: none;
-    }
-
-    .contenedor-form{
-        font-size: 0.8em;
-    }
-
-    ul.carrusel li img{
-    object-fit: fill;
-    }
-    .contenedor-redes li{
-        width: 40px;
-        margin: 20px;
-        transform: none;
-        
-    }
-    .redes-ul li:nth-child(1) span{
-        background-color: black;
-    }
-    .redes-ul li:nth-child(2) span{
-        background-color: black;
-    }
-    .redes-ul li:nth-child(3) span{
-        background-color: black;
-    }
-    .redes-ul li:nth-child(4) span{
-        background-color: black;
-    }
-    .redes-ul li:nth-child(5) span{
-        background-color: black;
-    }
-
-    .contenedor-entrenamiento{
-        align-items: flex-start;
-
-    }
-
-    .contenedor-carrusel{
-        height: 
-    }
-
-    .contenedor-carrusel img{
-        max-height: 80%;
-    }
-
-    .menu-carrusel li a{
-        font-size: 30px;
-        margin: 0;
-    }
-
-    .icono-problemas{
-        font-size: 0.6em;
-        margin-left: 32px;
-    }
-
-    .contenedor-problemas img{
-        display: none;
-    }
-
-    .contenedor-problemas{
-        height: 20%;
-    }
-    
-    .contenedor-contacto img{
-        display: none;
-    }
-
-    .contenedor-contacto{
-        font-size: 1em;
-        height: 40%;
-    }
-
-    .contenedor-entrenamiento img{
-        display: none;
-    }
-
-    .contenedor-entrenamiento{
-        height: 40%;
-        font-size: 1.5em;
-        
-    }
-    
-
-}
