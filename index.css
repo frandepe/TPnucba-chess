@@ -2,7 +2,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Patrick Hand', cursive;
+    font-family: 'Roboto', sans-serif;
+    
 }
 
 body {
@@ -21,7 +22,6 @@ body {
 }
 
 li, a{
-    font-family: 'Patrick Hand', cursive;
     font-weight: 500;
     font-size: 1.1em;
     color: #735751;
@@ -130,23 +130,27 @@ header{
 
 }
 
-.quienes-somos{
-    
+.quienes-somos{   
     text-align: center;
     margin-left: 20%;
     margin-right: 20%;
     font-size: 1.7em;
     
 }
+
 .contenedor-kasparov{
     display: flex;
     justify-content: space-around;
     margin-top: 5%;
     margin-bottom: 5%;
-    
+    width: 100%;
+  
 }
-
-.kasparov-h1 h1{
+.contenedor-kasparov .kasparov-h1{
+    width: 100%;
+   
+}
+.contenedor-kasparov .kasparov-h1 h1{
     text-align: center;
     margin-top: 10%;
     letter-spacing: 3px;
@@ -154,10 +158,17 @@ header{
     color: rgb(58, 54, 54);
     text-shadow: 1px 2px #E7D7C1;
     
+    
 }
 
-.kasparov-h1 h3{
-  
+.contenedor-kasparov .imgkasparov img{
+    width: 100%;
+    
+}
+
+.contenedor-kasparov .imgkasparov{
+    width: 100%;
+    
 }
 
 .kasparov-h1 h3::before{
@@ -176,6 +187,8 @@ header{
     
 
 }
+
+
 
 .contenedor-contacto{
 
@@ -617,5 +630,274 @@ ul.carrusel li:target{
 
 }
 
+.nuevos-productos-h2{
+    text-align: center;
+    margin-top: 5%;
+    font-size: 2em;
+    text-decoration: underline;
+    margin-bottom: 2%;
 }
 
+.nuevos-productos-h2::after{
+    content: '☟';
+    font-size: 1.5em;
+    color: #8C1C13;
+    margin-left: 1%;
+    animation-name: flecha;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    position: absolute;
+}
+
+.contenedor-compra{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1%;
+    background-color: #300906;
+    padding: 3%;
+    flex-wrap: wrap;
+}
+
+.contenedor-compra p{
+    font-size: 1.5em;
+    color: #E7D7C1;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.card-compra img{
+    object-fit: cover;
+    position: relative;
+}
+
+.card-compra{
+    box-shadow: 0px 0px 29px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 29px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 29px 0px rgba(0,0,0,0.75);
+    transition: all 500ms ease-in;
+    position: relative;
+    
+}
+
+.card-compra:hover{
+    cursor: pointer;
+    
+}
+
+.text-compra{
+    transition: all 300ms ease-in;
+    top: 0;
+    width: 100%;
+    height: 25.5vh;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-compra i{ 
+    color: #E7D7C1;
+    font-size: 2em;
+
+}
+
+.card-compra:hover .text-compra{
+    opacity: 1;
+}
+
+.ver-todo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #300906;
+    height: 10%;
+}
+
+.ver-todo-boton{
+    background-color: #E7D7C1;
+    font-size: 1.5em;
+    padding: 5px;
+    width: 8%;
+    transition: all 100ms ease-in;
+    border-radius: 5%;
+    border: 3px double black;
+}
+
+.ver-todo-boton:hover{
+    color: #c5a1a1;
+    cursor: pointer;
+    background-color: #8C1C13;
+    transition: all 100ms ease-in;
+}
+
+
+
+@media screen and (max-width: 1440px){
+    .contenedor-entrenamiento img{
+        max-width: 50%;
+    }
+    .contenedor-problemas img{
+        max-width: 50%;
+    }
+    .kasparov-h1 h3{
+        display: none;
+    }
+    .contenedor-kasparov{
+        width: 100%;
+    }
+   
+}
+
+
+
+@media  screen and (max-width: 1024px) {
+
+
+    .contenedor-entrenamiento img{
+        max-width: 40%;
+    }
+    .lista-entrenamiento{
+        font-size: 1.2em;
+    }
+
+    .icono-problemas{
+        font-size: 0.6em;
+    }
+    
+    .contenedor-contacto img{
+        max-width: 50%;
+        height: auto;
+    }
+
+    .contendor-imagenes{
+        display: none;
+    }
+}
+
+@media  screen and (max-width: 768px){
+
+    .contenedor-redes li{
+        width: 45px;
+        margin: 40px;
+    }
+
+    .contenedor-contacto{
+        font-size: 0.51em;
+        height: 30%;
+    }
+    .contenedor-redes li{
+        width: 40px;
+        margin: 20px;
+        transform: none;
+        
+    }
+
+}
+
+@media  screen and (max-width: 360px){
+
+    header .lista-navegacion{
+        display: none;
+    }
+
+    .contenedor-kasparov .kasparov-h1 h1{
+        margin-top: 10%;
+        letter-spacing: 3px;
+        font-size: 1em;
+        
+    }
+
+    .contenedor-form{
+        font-size: 0.8em;
+    }
+
+    ul.carrusel li img{
+    object-fit: fill;
+    }
+    .contenedor-redes li{
+        width: 40px;
+        margin: 20px;
+        transform: none;
+        
+    }
+    .redes-ul li:nth-child(1) span{
+        background-color: black;
+    }
+    .redes-ul li:nth-child(2) span{
+        background-color: black;
+    }
+    .redes-ul li:nth-child(3) span{
+        background-color: black;
+    }
+    .redes-ul li:nth-child(4) span{
+        background-color: black;
+    }
+    .redes-ul li:nth-child(5) span{
+        background-color: black;
+    }
+
+    .contenedor-entrenamiento{
+        align-items: flex-start;
+
+    }
+    .contenedor-entrenamiento li{
+        font-size: 0.8em;
+    }
+
+    .contenedor-carrusel{
+        height: 
+    }
+
+    .contenedor-carrusel img{
+        max-height: 80%;
+    }
+
+    .menu-carrusel li a{
+        font-size: 30px;
+        margin: 0;
+    }
+
+    .icono-problemas{
+        font-size: 0.6em;
+        margin-left: 32px;
+    }
+
+    .contenedor-problemas img{
+        display: none;
+    }
+
+    .contenedor-problemas{
+        height: 30%;
+    }
+    
+    .contenedor-contacto img{
+        display: none;
+    }
+
+    .contenedor-contacto{
+        font-size: 0.5em;
+        height: 40%;
+    }
+
+    .contenedor-entrenamiento img{
+        display: none;
+    }
+
+    .contenedor-entrenamiento{
+        height: 40%;
+        font-size: 1.5em;
+    }
+
+    .h2-animado{
+        font-size: 1em;
+    }
+
+    .ver-todo-boton{
+        width: 30%;
+        font-size: 1em;
+    }
+    
+}
