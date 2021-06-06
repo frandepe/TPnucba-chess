@@ -3,12 +3,12 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    
+    scroll-behavior: smooth;
 }
 
+
 body {
-    background-color:  rgba(61, 41, 41, 0.575);
-   
+    background-image: radial-gradient(circle at 37.68% 4.02%, #f9bb7a 0, #f4af79 10%, #eba378 20%, #dd9576 30%, #ca8672 40%, #b4766b 50%, #9d6763 60%, #885b5c 70%, #775155 80%, #68494f 90%, #5c434a 100%);
 }
 
 .margin{
@@ -497,6 +497,7 @@ header{
     background-color: #8C1C13;
     padding: 40px;
     border: 1px solid black;
+    margin-bottom: 5%;
 }
 
 
@@ -778,7 +779,9 @@ ul.carrusel li:target{
 }
 
 @media  screen and (max-width: 768px){
-
+    .margin{
+        margin: 0;
+    }
     .contenedor-redes li{
         width: 45px;
         margin: 40px;
@@ -790,10 +793,15 @@ ul.carrusel li:target{
     }
     .contenedor-redes li{
         width: 40px;
-        margin: 20px;
+        margin: 5;
         transform: none;
         
     }
+
+    .ver-todo-boton{
+        width: 15%;
+    }
+
 
 }
 
@@ -817,9 +825,9 @@ ul.carrusel li:target{
     ul.carrusel li img{
     object-fit: fill;
     }
+
     .contenedor-redes li{
         width: 40px;
-        margin: 20px;
         transform: none;
         
     }
@@ -862,7 +870,8 @@ ul.carrusel li:target{
 
     .icono-problemas{
         font-size: 0.6em;
-        margin-left: 32px;
+        margin-left: 28%;
+        margin-top: 5%;
     }
 
     .contenedor-problemas img{
@@ -871,6 +880,7 @@ ul.carrusel li:target{
 
     .contenedor-problemas{
         height: 30%;
+        
     }
     
     .contenedor-contacto img{

@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+    background-image: url(bodylogin.jpg);
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor-registro{
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    margin-top: 10%;
+    background-image: radial-gradient(circle at 2.58% 54.15%, #f9bb7a 0, #f4af79 10%, #eba378 20%, #dd9576 30%, #ca8672 40%, #b4766b 50%, #9d6763 60%, #885b5c 70%, #775155 80%, #68494f 90%, #5c434a 100%);    border-radius: 2%;
+    height: 85%;
+    width: 54vh;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.conenedor-titulo{
+    text-align: center;
+}
+
+.conenedor-titulo h2{
+    font-size: 3em;
+    border-bottom: 2px solid black;
+    text-shadow: -3px 2px 2px rgba(0,0,0,0.6);
+}
+
+.contenedor-email{
+    border: 2px solid black;
+    margin: 0;
+}
+
+
+.contacto{
+    background-image: radial-gradient(circle at 97.42% 54.15%, #f9bb7a 0, #f4af79 10%, #eba378 20%, #dd9576 30%, #ca8672 40%, #b4766b 50%, #9d6763 60%, #885b5c 70%, #775155 80%, #68494f 90%, #5c434a 100%);    width: 45vh;;
+    padding: 5%;
+    margin: 0;
+}
+
+input{
+    border-radius: 5%;
+    width: 100%; 
+    height: 7%;
+    font-size: 1em;
+    margin: 0;
+}
+
+.contenedor-ref{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.contenedor-ref a{
+    text-decoration: none;
+    color: rgb(32, 4, 4);
+    font-weight: 800;
+}
+
+.contenedor-ref a:hover{
+    cursor: pointer;
+    color: rgba(247, 210, 141, 0.651);
+}
+
+.contenedor-ref button{
+    background: none;
+    border: none;
+    font-size: 1.3em;
+    font-weight: bolder;
+    transition: all 0.5s ease-in-out;
+    
+    
+}
+
+.contenedor-ref button:hover{
+    cursor: pointer;
+    color: rgb(32, 4, 4);
+    transition: all 0.5s ease-in-out;
+}
+
+.contenedor-ref button:after{
+    content: ">>";
+    opacity: 0;
+    color: #ffffc5;
+    transition: all 300ms ease-in;
+    position: absolute;
+}
+
+.contenedor-ref button:hover:after{
+    transition: all 300ms ease-in;
+    opacity: 1;
+}
+
+.contenedor-ref input{
+    width: 5%;
+    height: initial;
+    color: #34bc00;
+   
+}
+
